@@ -1,0 +1,34 @@
+{
+  "components": [
+    {
+      "id": "2bba6e14-7228-40aa-bafe-8d4ffbed78f5",
+      "setting": {},
+      "type": "txt",
+      "active": true,
+      "order": 2
+    },
+    {
+      "id": "feee5c4f-80e2-447a-a580-c493d81ccd40",
+      "setting": {
+        "bgColor": "#185067",
+        "textColor": "#ffffff",
+        "withIcon": true,
+        "iconIndex": 26,
+        "btnBorderRadius": "10px"
+      },
+      "type": "btns",
+      "active": false,
+      "order": 1
+    }
+  ],
+  "pageSetting": {
+    "gap": "32",
+    "padding": "5px",
+    "spoiler": false,
+    "paddingY": "60",
+    "paddingX": "12"
+  },
+  "pageHeader": {
+    "pageHeader": "fsd"
+  }
+}

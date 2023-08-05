@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply bg-white mt-1 border-[1px] h-[45px] py-[10px] pb-[12px] px-[12px] border-neutral-light rounded-[12px] w-full outline-none placeholder:text-[10px] placeholder:text-neutral-main placeholder:font-bold;
+  }
+  .label {
+    @apply mr-2 text-neutral-dark text-[14px] w-full;
+  }
+  .subLabel {
+    @apply text-[12px] text-neutral-hover;
+  }
+  .btn-primary {
+    @apply bg-primary-main hover:bg-primary-main/80 w-full text-white transition h-[48px] flex justify-center items-center rounded-[12px] cursor-pointer select-none;
+  }
+  .btn-edit {
+    @apply bg-white/60 w-8 h-8 border-2 border-white rounded-lg flex justify-center items-center cursor-pointer select-none;
+  }
+  .btn-frame {
+    @apply border-2 border-neutral-light w-full h-[50px] rounded-[12px] active:bg-black/20 backdrop-blur-xl font-bold cursor-pointer select-none z-50;
+  }
+  .input-drop {
+    @apply border border-neutral-border-light bg-white rounded-[10px] text-gray-400 text-sm h-[40px] w-[200px] font-bold outline-none;
+  }
+
+  .settings-header {
+    @apply flex justify-start items-center w-full font-semibold mb-[16px];
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bec4c4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

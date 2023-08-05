@@ -1,0 +1,14 @@
+version: "3"
+services:
+  client:
+    build:
+      context: ../../Client
+      dockerfile: ../Docker/Production/Dockerfile
+    ports:
+    - 80:80
+
+  jsonserver:
+    restart: always
+    build:
+      context: ../../jsonServer
+      dockerfile: Dockerfile

@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  client:
+    build:
+      context: ../../Client
+      dockerfile: ../Docker/Build/Dockerfile.dev
+    volumes:
+      - /app/node_modules
+      - ../../Client:/app
+      
+  jsonserver:
+    restart: always
+    build:
+      context: ../../jsonServer
+      dockerfile: Dockerfile
+
+  nginx:
+    depends_on:
+      - client
+    restart: always
+    build: 
+      context: ../../nginx/dev
+      dockerfile: Dockerfile.dev
+    ports:
+      - 80:80
