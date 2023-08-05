@@ -1,27 +1,27 @@
-# React + TypeScript + Vite
+## React Page Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this project created with vite, React, typescript, DndKit, Redux, Tailwind, json-server, nginx
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is dockerized
 
-## Expanding the ESLint configuration
+### development
+run as follows:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+cd './Docker/Build'
+docker-compose up --build
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+project is up and running on port 80
+
+### Production
+run as follows:
+
+```bash
+cd './Docker/Production'
+docker-compose up --build
+```
+
+project is up and running on port 80
